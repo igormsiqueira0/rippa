@@ -27,10 +27,13 @@
 		text-align: center;
 	}
 	&-pic {
-		height: 140px;
-		width: 140px;
-		background: url('../assets/depoimento1.png') no-repeat top center;
-		border-radius: 50%;
+		img {
+			height: 140px;
+			width: 140px;
+			border-radius: 50%;
+			object-fit: cover;
+			object-position: top;
+		}
 	}
 	&-stars {
 		width: calc(25px * 5);
