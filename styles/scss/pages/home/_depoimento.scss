@@ -25,6 +25,29 @@
 		font-family: $font1;
 		font-style: italic;
 		text-align: center;
+		position: relative;
+		padding-block: 10px;
+		z-index: 10;
+	}
+	.txt-wrapper {
+		position: relative;
+		&::before,
+		&::after {
+			content: '"';
+			font-family: Engravers MT;
+			font-size: 266px;
+			color: $cinza-claro;
+			position: absolute;
+		}
+		&::before {
+			top: 20px;
+			right: -40px;
+		}
+		&::after {
+			bottom: 20px;
+			left: -40px;
+			transform: rotate(180deg);
+		}
 	}
 	&-pic {
 		img {
