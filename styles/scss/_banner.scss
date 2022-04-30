@@ -1,0 +1,33 @@
+.banner {
+	width: 100%;
+	padding-block: 36px;
+	h1 {
+		color: $branco;
+		font-family: $font2 !important;
+		font-size: rem(90);
+		text-align: center;
+		text-transform: uppercase;
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		filter: brightness(0.5);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 0 100%;
+		z-index: -99;
+	}
+	&.sobre::before {
+		background-image: url('../assets/sobre.png');
+	}
+	&.menu::before {
+		background-image: url('../assets/menu.png');
+	}
+	&.contato::before {
+		background-image: url('../assets/contato.png');
+	}
+}

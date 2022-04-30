@@ -1,0 +1,92 @@
+.depoimento {
+	margin-bottom: 200px;
+	&-item {
+		max-width: 500px;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+		margin-inline: auto;
+		gap: 25px;
+	}
+	.slide li {
+		flex-shrink: 0;
+		width: 100%;
+		margin: 0 20px;
+		overflow: hidden;
+		transition: 0.4s;
+	}
+	h3 {
+		font-size: rem(28);
+		font-weight: 500;
+	}
+	p {
+		font-size: rem(28);
+		font-family: $font1;
+		font-style: italic;
+		text-align: center;
+	}
+	&-pic {
+		height: 140px;
+		width: 140px;
+		background: url('../assets/depoimento1.png') no-repeat top center;
+		border-radius: 50%;
+	}
+	&-stars {
+		width: calc(25px * 5);
+		height: 25px;
+		background: url('../assets/star.png');
+		display: block;
+		background-size: contain;
+	}
+	.wrapper {
+		overflow: hidden;
+	}
+	.slide {
+		display: flex;
+	}
+	.arrow-nav {
+		position: relative;
+		@include device(md) {
+			display: none;
+		}
+		button {
+			border: none;
+			background: none;
+			font-size: rem(90);
+			position: absolute;
+			cursor: pointer;
+		}
+	}
+	.prev {
+		top: -250px;
+		left: 120px;
+		@include device(xl) {
+			left: 0;
+		}
+	}
+	.next {
+		top: -250px;
+		right: 120px;
+		@include device(xl) {
+			right: 0;
+		}
+	}
+	.custom-controls {
+		display: flex;
+		margin-inline: auto;
+		gap: 70px;
+		max-width: fit-content;
+		margin-top: 60px;
+		li {
+			height: 22px;
+			width: 22px;
+			border: 3px solid $preto;
+			border-radius: 50%;
+			cursor: pointer;
+			&.active {
+				background-color: $preto;
+			}
+		}
+	}
+}

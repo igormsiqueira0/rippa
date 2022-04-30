@@ -1,0 +1,53 @@
+@import 'helper';
+@import 'header';
+@import 'title';
+@import 'footer';
+@import 'banner';
+
+@import 'pages/home/intro';
+@import 'pages/home/visao-geral';
+@import 'pages/home/menu';
+@import 'pages/home/depoimento';
+@import 'pages/sobre/content';
+@import 'pages/menu/content';
+@import 'pages/menu/menu-nav';
+@import 'pages/menu/menu-pratos';
+@import 'pages/contato/content';
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: $branco;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: $font1;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	color: $preto;
+}
+
+.container {
+	max-width: min(1400px, 90%);
+	margin-inline: auto;
+}

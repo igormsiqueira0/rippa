@@ -1,0 +1,67 @@
+@use 'sass:math';
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&display=swap');
+
+$preto: #1a1b1f;
+$branco: #fbfbfb;
+$cinza-claro: #ececec;
+$vermelho: #9c2f2f;
+$unnamed-color-ffffff: #ffffff;
+$cinza-escuro: #616161;
+$cinza: #d8d8d8;
+$font1: 'Montserrat', sans-serif;
+$font2: 'Bebas Neue', cursive;
+$header-correction: 138px;
+
+@function rem($size) {
+	@return math.div($size, 16) + rem;
+}
+
+@mixin device($device, $size: 0) {
+	@if $device == sm {
+		@media (max-width: 400px) {
+			@content;
+		}
+	} @else if $device == md {
+		@media (max-width: 700px) {
+			@content;
+		}
+	} @else if $device == lg {
+		@media (max-width: 900px) {
+			@content;
+		}
+	} @else if $device == xl {
+		@media (max-width: 1070px) {
+			@content;
+		}
+	} @else if $device == xxl {
+		@media (max-width: 1270px) {
+			@content;
+		}
+	} @else if $device == custom {
+		@media (max-width: $size) {
+			@content;
+		}
+	}
+}
+
+.section-wrapper-fw {
+	background-color: $branco;
+	z-index: 999999;
+}
+
+.divided-text {
+	padding-inline: 5%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	& p {
+		font-size: rem(28);
+	}
+	@include device(xl) {
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+	}
+	p:nth-of-type(2) {
+		grid-column: 3;
+	}
+}

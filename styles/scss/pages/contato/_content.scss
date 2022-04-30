@@ -1,0 +1,113 @@
+[data-page='contato'] {
+	main {
+		padding-block: 140px;
+	}
+}
+
+.contato-content {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 65px;
+	@include device(xxl) {
+		grid-template-columns: 1fr;
+	}
+	h2 {
+		font-size: rem(60);
+		font-family: $font2;
+		color: $vermelho;
+		margin-bottom: 25px;
+		&:not(:nth-of-type(1)) {
+			margin-top: 30px;
+		}
+	}
+	p {
+		display: inline-block;
+		font-size: rem(28);
+		font-weight: 500;
+		margin-bottom: 20px;
+	}
+}
+
+.form-input-wrapper {
+	width: 100%;
+	position: relative;
+}
+
+.contato-form {
+	border-radius: 35px;
+	background: url('../assets/contato1.png') no-repeat center center;
+	@include device(md) {
+		background: none;
+	}
+	form {
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+		align-items: center;
+		background-color: $branco;
+		width: fit-content;
+		padding: 50px;
+		margin: 50px auto;
+		border-radius: 35px;
+		h2 {
+			margin: 0;
+			@include device(sm) {
+				font-size: rem(50);
+			}
+		}
+		input,
+		textarea {
+			border: none;
+			border-bottom: 2px solid transparent;
+			background-color: $cinza-claro;
+			width: 100%;
+			border-radius: 5px;
+			font-size: rem(28);
+			color: $preto;
+			text-align: center;
+			padding: 10px;
+			outline: none;
+			&:focus {
+				border-color: $preto;
+			}
+		}
+		input {
+			height: 55px;
+		}
+		textarea {
+			resize: vertical;
+			min-height: 100px;
+			max-height: 690px;
+		}
+		label {
+			position: absolute;
+			top: 10px;
+			z-index: 10;
+			font-weight: 500;
+			font-size: rem(28);
+			color: $cinza-escuro;
+			text-align: center;
+			left: 50%;
+			transform: translate(-50%, 0);
+			pointer-events: none;
+			transition: 0.2s;
+			&.active {
+				font-size: rem(16);
+				left: 5%;
+				transform: translate(-5%, 0);
+				top: -10px;
+				background: linear-gradient(180deg, $branco 50%, $cinza-claro 50%);
+			}
+		}
+		button {
+			padding-block: 10px;
+			border: none;
+			background-color: $vermelho;
+			color: $branco;
+			font-size: rem(28);
+			font-weight: 500;
+			width: 100%;
+			border-radius: 5px;
+		}
+	}
+}

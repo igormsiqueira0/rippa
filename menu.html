@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-page="menu">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rippa - Veja nosso menu completo</title>
+		<link rel="stylesheet" href="styles/style.css" />
+	</head>
+	<body>
+		<header class="secondary">
+			<div class="container header-inner">
+				<div class="logo"></div>
+				<nav aria-label="Main" id="main-nav">
+					<button data-menu="button" aria-expanded="false" aria-controls="menu">
+						Menu
+					</button>
+
+					<ul data-menu="list" id="menu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="sobre.html">Sobre</a></li>
+						<li><a href="menu.html">Menu</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<section class="container banner menu">
+			<h1>Nosso Menu</h1>
+		</section>
+
+		<div class="section-wrapper-fw menu-intro">
+			<section class="container">
+				<h2 class="title">Satisfação e variedade</h2>
+
+				<p>
+					O restaurante conta com um cardápio primoroso e incomparável,
+					caracterizado por sua ampla variedade de pratos, objetivando garantir
+					a satisfação dos clientes.
+				</p>
+			</section>
+		</div>
+
+		<div class="section-wrapper-fw menu-nav">
+			<nav class="container" aria-label="Cardápio">
+				<ul>
+					<li class="nav-item">Entradas</li>
+					<div class="divisor"></div>
+					<li class="nav-item">Pratos quentes</li>
+					<div class="divisor"></div>
+					<li class="nav-item">Sushis e sashimis</li>
+					<div class="divisor"></div>
+					<li class="nav-item">Sobremesas</li>
+				</ul>
+			</nav>
+
+			<div class="container mobile-nav">
+				<label for="">Selecione o tipo de prato:</label>
+				<select name="pref" id="pref">
+					<option value="entradas">Entradas</option>
+					<option value="pratos quentes">Pratos quentes</option>
+					<option value="sushis e sashimis">Sushis e sashimis</option>
+					<option value="sobremesas">Sobremesas</option>
+				</select>
+			</div>
+		</div>
+
+		<main class="section-wrapper-fw menu-pratos">
+			<ul class="container"></ul>
+		</main>
+
+		<footer class="footer">
+			<div class="container footer-inner">
+				<div class="footer-logo"></div>
+				<div class="footer-info">
+					<h4>ENDEREÇO</h4>
+					<p>Rua Limalime, 5432, Uaise, SP</p>
+					<h4>TELEFONE</h4>
+					<p>(11) XXXX-XXXX</p>
+					<h4>HORÁRIO DE FUNCIONAMENTO</h4>
+					<p>Segunda a sábado - 18h às 23h</p>
+					<p>Domingo - 12h às 17h</p>
+				</div>
+				<div class="footer-nav">
+					<h4>NAVEGAÇÃO NO SITE</h4>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="sobre.html">Sobre</a></li>
+						<li><a href="menu.html">Menu</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</div>
+				<div class="footer-social">
+					<h4>REDES SOCIAIS</h4>
+
+					<div class="social-wrapper">
+						<a href="" class="footer-social-item facebook"></a
+						><a href="" class="footer-social-item instagram"></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+		<script src="menu.js"></script>
+	</body>
+</html>

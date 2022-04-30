@@ -1,0 +1,114 @@
+[
+	{
+		"categoria": "entradas",
+		"pratos": [
+			{
+				"nome": "Shimeji",
+				"img": "assets/shimeji.png"
+			},
+			{
+				"nome": "Rolinho primavera",
+				"img": "assets/primavera.png"
+			},
+			{
+				"nome": "Poke",
+				"img": "assets/poke.png"
+			},
+			{
+				"nome": "Ceviche",
+				"img": "assets/ceviche.png"
+			},
+			{
+				"nome": "Missoshiru",
+				"img": "assets/misso.png"
+			},
+			{
+				"nome": "Guioza",
+				"img": "assets/guioza.png"
+			}
+		]
+	},
+	{
+		"categoria": "pratos quentes",
+		"pratos": [
+			{
+				"nome": "Tempurá de camarão",
+				"img": "assets/tempura.jpg"
+			},
+			{
+				"nome": "Teppanyaki de anchova",
+				"img": "assets/teppa.jpg"
+			},
+			{
+				"nome": "Yakissoba de camarão",
+				"img": "assets/yakissoba.jpg"
+			},
+			{
+				"nome": "Gyutsu",
+				"img": "assets/gyutsu.jpg"
+			},
+			{
+				"nome": "Tonkatsu",
+				"img": "assets/tonkatsu.webp"
+			},
+			{
+				"nome": "Karê Rice",
+				"img": "assets/kare.jpg"
+			}
+		]
+	},
+	{
+		"categoria": "sushis e sashimis",
+		"pratos": [
+			{
+				"nome": "Niguiri de atum",
+				"img": "assets/atum.jpg"
+			},
+			{
+				"nome": "Niguiri de camarão",
+				"img": "assets/camarao.jpg"
+			},
+			{
+				"nome": "Niguiri de polvo",
+				"img": "assets/polvo.jpg"
+			},
+			{
+				"nome": "Niguiri de salmão",
+				"img": "assets/salmao.jpg"
+			},
+			{
+				"nome": "Sashimi de atum",
+				"img": "assets/atum2.webp"
+			},
+			{
+				"nome": "Sashimi de salmão",
+				"img": "assets/salmao2.jpg"
+			},
+			{
+				"nome": "Sashimi de peixe branco",
+				"img": "assets/branco.png"
+			}
+		]
+	},
+	{
+		"categoria": "sobremesas",
+		"pratos": [
+			{
+				"nome": "Petit gateau",
+				"img": "assets/petit.jpg"
+			},
+			{
+				"nome": "Tempurá de sorvete",
+				"img": "assets/sorvete.jpg"
+			},
+			{
+				"nome": "Harumaki de morango e nutella",
+				"img": "assets/harumaki.jpg"
+			},
+			{
+				"nome": "Amitsu",
+				"img": "assets/amitsu.jpg"
+			}
+		]
+	}
+]
