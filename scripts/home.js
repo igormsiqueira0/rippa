@@ -3,7 +3,7 @@ const handleClick = (e) => {
 	const txt = e.target.innerText.toLowerCase();
 	window.localStorage.setItem('pref', txt);
 
-	window.location.href = 'menu.html';
+	window.location.href = 'menu.html#menu';
 };
 
 const navigateToMenu = () => {

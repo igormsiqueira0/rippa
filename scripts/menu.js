@@ -10,21 +10,18 @@ fetchMenu();
 // eventControl
 const nav = document.querySelectorAll('.nav-item');
 const mobileSelect = document.querySelector('.mobile-nav #pref');
+const ul = document.querySelector('.menu-pratos ul');
 
 function insertData(arr) {
-	const ul = document.querySelector('.menu-pratos ul');
 	ul.innerHTML = '';
 
 	arr.forEach((item) => {
 		const li = document.createElement('li');
-		const img = document.createElement('img');
-		const paragraph = document.createElement('p');
 
-		img.setAttribute('src', item.img);
-		paragraph.innerText = item.nome;
-
-		li.appendChild(img);
-		li.appendChild(paragraph);
+		li.innerHTML = `
+			<img src=${item.img} alt="Foto de ${item.nome}" />
+			<p>${item.nome}</p>
+		`;
 
 		ul.appendChild(li);
 	});
@@ -65,6 +62,16 @@ const changeMobileVal = (val) => {
 	if (mobileSelect) mobileSelect.value = val;
 };
 
+// scroll on anchor --------------------------------------
+
+function scrollToMenu() {
+	if (window.location.hash === '#menu') {
+		setTimeout(() => {
+			ul.scrollIntoView({ block: 'center', behavior: 'smooth' });
+		}, 501);
+	}
+}
+
 // onload ------------------------------------------------
 
 const handleLoad = (pref) => {
@@ -82,6 +89,7 @@ window.onload = () => {
 	changeMobileVal(initialPreference);
 	activateTab();
 	mobileSelection();
+	scrollToMenu();
 };
 
 // activate tab ------------------------------------------
